@@ -2,13 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PrototipoPAv2"
-             x:Class="PrototipoPAv2.MainPage">
+             x:Class="PrototipoPAv2.MainPage"
+             Title="Login">
 
-    <StackLayout>
+    <StackLayout Orientation="Vertical"
+                 Padding="32"
+                 Spacing="10">
         <!-- Place new controls here -->
-        <Label Text="Logrado qlo" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="Bienvenido a PackingApp"
+               FontSize="Large"/>
+
+        <Entry x:Name="txtEmail"
+               Placeholder="Ingrese Email"/>
+
+        <Entry x:Name="txtContraseña"
+               Placeholder="Ingrese Contraseña"
+               IsPassword="True"/>
+
+        <Button x:Name="BtnIngresar"
+                Text="Ingresar"
+                Clicked="BtnIngresar_Clicked"/>
+
     </StackLayout>
 
 </ContentPage>

@@ -13,5 +13,10 @@ namespace PrototipoPAv2
         {
             InitializeComponent();
         }
+
+        private void BtnIngresar_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
