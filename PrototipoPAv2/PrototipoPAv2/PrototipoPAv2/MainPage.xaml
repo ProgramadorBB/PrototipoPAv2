@@ -9,19 +9,32 @@
                  Padding="32"
                  Spacing="10">
         <!-- Place new controls here -->
+        <Image WidthRequest="128"
+               Source="iconoPA.png"/>
+
         <Label Text="Bienvenido a PackingApp"
-               FontSize="Large"/>
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"/>
 
         <Entry x:Name="txtEmail"
-               Placeholder="Ingrese Email"/>
+               Placeholder="Ingrese Email"
+               FontSize="Micro"
+               FontAttributes="Italic"/>
 
         <Entry x:Name="txtContraseña"
                Placeholder="Ingrese Contraseña"
-               IsPassword="True"/>
+               IsPassword="True"
+               FontSize="Micro"
+               FontAttributes="Italic"/>
 
         <Button x:Name="BtnIngresar"
                 Text="Ingresar"
                 Clicked="BtnIngresar_Clicked"/>
+        
+        <Label Text="Developed by: Byron Bravo"
+               FontSize="Micro"
+               HorizontalTextAlignment="Center"/>
 
     </StackLayout>
 
