@@ -4,17 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using PrototipoPAv2.Conexiones;
+using PrototipoPAv2.Modelo;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace PrototipoPAv2.Vistas
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Registro : ContentPage
-	{
-		public Registro ()
-		{
-			InitializeComponent ();
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Registro : ContentPage
+    {
+        public Registro()
+        {
+            InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
 
             pkColor.Items.Add("Naranjo");
@@ -22,6 +25,8 @@ namespace PrototipoPAv2.Vistas
             pkColor.Items.Add("Amarillo");
             pkColor.Items.Add("Azul");
             pkColor.Items.Add("Celeste");
+            //pkColor.Items.Add(" ");
+            //pkColor.SelectedIndex = 5;
 
             pkTipo.Items.Add("Empaque");
             pkTipo.Items.Add("Coordinador");
@@ -31,7 +36,7 @@ namespace PrototipoPAv2.Vistas
         private void PkColor_SelectedIndexChanged(object sender, EventArgs e)
         {
             string color = pkColor.SelectedItem.ToString();
-            if(color == "Naranjo")
+            if (color == "Naranjo")
             {
                 pkColor.BackgroundColor = Color.Orange;
                 pkColor.TextColor = Color.Orange;
@@ -56,9 +61,31 @@ namespace PrototipoPAv2.Vistas
                 pkColor.BackgroundColor = Color.LightBlue;
                 pkColor.TextColor = Color.LightBlue;
             }
+
         }
 
-
-
+        private void BtnRegistrarUsuario_Clicked(object sender, EventArgs e)
+        {
+            /* 
+               UsuarioRepository.Instancia.AddNuevoUsuario(
+                 txtEmail.Text, txtContraseña.Text, txtNombre.Text,
+                 txtApellido.Text, pkColor.SelectedItem.ToString(),
+                 pkTipo.SelectedItem.ToString(), txtEstado.Text);
+                 */
+            if (pkColor.SelectedIndex >= 0)
+            {
+                lblMensaje.TextColor = Color.DarkRed;
+                lblMensaje.Text = "color: " + pkColor.SelectedItem.ToString() +
+                " Tipo:" + pkTipo.SelectedItem.ToString() +
+                " estado:" + txtEstado.Text;                
+            }
+            else
+            {
+                lblMensaje.TextColor = Color.Red;
+                lblMensaje.Text = "*AVISO: Debe elegir un color";
+            }
+                 
+            
+        }
     }
 }
