@@ -25,8 +25,6 @@ namespace PrototipoPAv2.Vistas
             pkColor.Items.Add("Amarillo");
             pkColor.Items.Add("Azul");
             pkColor.Items.Add("Celeste");
-            //pkColor.Items.Add(" ");
-            //pkColor.SelectedIndex = 5;
 
             pkTipo.Items.Add("Empaque");
             pkTipo.Items.Add("Coordinador");
@@ -66,18 +64,16 @@ namespace PrototipoPAv2.Vistas
 
         private void BtnRegistrarUsuario_Clicked(object sender, EventArgs e)
         {
-            /* 
-               UsuarioRepository.Instancia.AddNuevoUsuario(
-                 txtEmail.Text, txtContraseña.Text, txtNombre.Text,
-                 txtApellido.Text, pkColor.SelectedItem.ToString(),
-                 pkTipo.SelectedItem.ToString(), txtEstado.Text);
-                 */
+            lblMensaje.Text = string.Empty;
+            
             if (pkColor.SelectedIndex >= 0)
             {
                 lblMensaje.TextColor = Color.DarkRed;
-                lblMensaje.Text = "color: " + pkColor.SelectedItem.ToString() +
-                " Tipo:" + pkTipo.SelectedItem.ToString() +
-                " estado:" + txtEstado.Text;                
+
+                UsuarioRepository.Instancia.AddNuevoUsuario(
+                 txtEmail.Text, txtContraseña.Text, txtNombre.Text,
+                 txtApellido.Text, pkColor.SelectedItem.ToString(),
+                 pkTipo.SelectedItem.ToString(), txtEstado.Text);
             }
             else
             {

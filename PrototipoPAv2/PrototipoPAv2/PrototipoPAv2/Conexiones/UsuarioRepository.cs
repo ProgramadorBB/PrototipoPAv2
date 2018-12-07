@@ -50,7 +50,22 @@ namespace PrototipoPAv2.Conexiones
             int result = 0;
             try
             {
-                result = con.Insert(new Usuario() {
+                if (string.IsNullOrEmpty(email))
+                    throw new Exception("Email inválido");
+                else if (string.IsNullOrEmpty(contraseña))
+                    throw new Exception("Contraseña inválida");
+                else if (string.IsNullOrEmpty(nombre))
+                    throw new Exception("Nombre inválido");
+                else if (string.IsNullOrEmpty(apellido))
+                    throw new Exception("Apellido inválido");
+                else if (string.IsNullOrEmpty(color))
+                    throw new Exception("Color selecionado inválido");
+                else if (string.IsNullOrEmpty(tipo))
+                    throw new Exception("Tipo de usuario inválido");
+                else if (string.IsNullOrEmpty(estado))
+                    throw new Exception("Error en el estado del Usuario");
+
+                    result = con.Insert(new Usuario() {
                                      Email = email,
                                      Contraseña = contraseña,
                                      Nombre = nombre,
