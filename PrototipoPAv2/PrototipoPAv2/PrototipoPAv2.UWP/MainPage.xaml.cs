@@ -21,7 +21,8 @@ namespace PrototipoPAv2.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new PrototipoPAv2.App());
+            string dbPath = FileAccess.GetLocalFilePath("usuarios.db3");
+            LoadApplication(new PrototipoPAv2.App(dbPath));
         }
     }
 }

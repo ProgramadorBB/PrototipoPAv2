@@ -9,9 +9,11 @@ namespace PrototipoPAv2
 {
     public partial class App : Application
     {
-        public App()
+        public App(string filename)
         {
             InitializeComponent();
+
+            UsuarioRepository.Inicializador(filename);
 
             MainPage = new NavigationPage(new MainPage())
             { BarBackgroundColor = Color.Black , BarTextColor = Color.White };

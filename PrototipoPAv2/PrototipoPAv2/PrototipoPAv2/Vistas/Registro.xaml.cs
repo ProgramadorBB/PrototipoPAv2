@@ -56,7 +56,9 @@ namespace PrototipoPAv2.Vistas
                 pkColor.BackgroundColor = Color.LightBlue;
                 pkColor.TextColor = Color.LightBlue;
             }
-
         }
+
+
+
     }
 }

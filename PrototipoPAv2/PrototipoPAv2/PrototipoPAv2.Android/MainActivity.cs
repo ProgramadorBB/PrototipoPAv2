@@ -18,8 +18,11 @@ namespace PrototipoPAv2.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
+
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            LoadApplication(new App());
+
+            string dbPath = FileAccess.GetLocalFilePath("usuarios.db3");
+            LoadApplication(new App(dbPath));
 
 
             // cambiamos de color la barra de actividades de android
