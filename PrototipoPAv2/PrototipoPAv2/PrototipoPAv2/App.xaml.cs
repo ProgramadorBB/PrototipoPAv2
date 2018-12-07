@@ -1,6 +1,8 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using PrototipoPAv2.Modelo;
+using PrototipoPAv2.Conexiones;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace PrototipoPAv2
