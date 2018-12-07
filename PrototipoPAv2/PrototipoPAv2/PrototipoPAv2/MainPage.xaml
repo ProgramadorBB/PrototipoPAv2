@@ -6,6 +6,7 @@
              Title="Login">
 
     <StackLayout Orientation="Vertical"
+                 BackgroundColor="LightGoldenrodYellow"
                  Padding="32"
                  Spacing="10">
         <!-- Place new controls here -->
@@ -14,6 +15,7 @@
 
         <Label Text="Bienvenido a PackingApp"
                FontSize="Large"
+               TextColor="#545454"
                FontAttributes="Bold"
                HorizontalTextAlignment="Center"/>
 
@@ -28,8 +30,14 @@
                FontSize="Micro"
                FontAttributes="Italic"/>
 
-        <Button x:Name="BtnIngresar"
+        <Button x:Name="BtnIngresar"            
+                BorderRadius="10"
+                BorderWidth="2"
+                BorderColor="#353535"
                 Text="Ingresar"
+                BackgroundColor="#545454"
+                FontAttributes="Bold"
+                TextColor="LightGoldenrodYellow"
                 Clicked="BtnIngresar_Clicked"/>
         
         <Label Text="Developed by: Byron Bravo"

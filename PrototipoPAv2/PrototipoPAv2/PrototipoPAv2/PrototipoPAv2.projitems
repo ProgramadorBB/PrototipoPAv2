@@ -21,8 +21,15 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Modelo\Usuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vistas\Registro.xaml.cs">
+      <DependentUpon>Registro.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Vistas\" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Vistas\Registro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

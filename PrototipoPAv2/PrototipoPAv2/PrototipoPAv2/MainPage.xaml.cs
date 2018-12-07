@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using PrototipoPAv2.Vistas;
 
 namespace PrototipoPAv2
 {
@@ -12,11 +13,12 @@ namespace PrototipoPAv2
         public MainPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void BtnIngresar_Clicked(object sender, EventArgs e)
+        private async void BtnIngresar_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new Registro());
         }
     }
 }

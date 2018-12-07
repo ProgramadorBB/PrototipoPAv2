@@ -157,6 +157,9 @@
   <ItemGroup>
     <BundleResource Include="Resources\iconoPA.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\newUser.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\PrototipoPAv2\PrototipoPAv2.projitems" Label="Shared" />
 </Project>

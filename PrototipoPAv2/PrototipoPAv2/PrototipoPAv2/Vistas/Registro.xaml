@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrototipoPAv2.Vistas.Registro">
+    <ContentPage.Content>
+        
+        <StackLayout Orientation="Vertical"
+                     Padding="22"
+                     Spacing="2"
+                     BackgroundColor="LightGoldenrodYellow">
+
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+                <Image WidthRequest="32"
+                       Source="newUser.png"/>
+                <Label Text="Registro" 
+                       FontSize="Large"
+                       FontAttributes="Bold"/>
+                
+            </StackLayout>
+            
+            <Entry x:Name="txtEmail"
+                   Placeholder="Ingrese Email"
+                   FontSize="Micro"/>
+
+            <Entry x:Name="txtContraseña"
+                   Placeholder="Ingrese Contraseña"
+                   IsPassword="True"
+                   FontSize="Micro"/>
+            
+            <Entry x:Name="txtNombre"
+                   Placeholder="Ingrese Nombre"
+                   FontSize="Micro"/>
+            
+            <Entry x:Name="txtApellido"
+                   Placeholder="Ingrese Apellido"
+                   FontSize="Micro"/>
+
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand">
+
+                <Label Text="Seleccionar Color del Usuario:"
+                       FontSize="Micro"/>
+                
+                <Picker x:Name="pkColor"
+                        HeightRequest="13"
+                        WidthRequest="66"
+                        FontSize="Micro"                            
+                        TextColor="White"
+                        BackgroundColor="#545454"
+                        Title="Colores:"
+                        SelectedIndexChanged="PkColor_SelectedIndexChanged"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand"
+                         Padding="4.5">
+                <Label Text="Tipo de Usuario:"
+                       VerticalTextAlignment="Center"
+                       FontSize="Micro"/>
+                <Picker x:Name="pkTipo"
+                        WidthRequest="125.5"
+                        FontSize="Micro"
+                        TextColor="#737360"
+                        HorizontalOptions="End"                        
+                        Title="Privilegios:"/>
+                
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal"                         
+                         Spacing="0"
+                         Padding="3.5">
+
+                <Label Text="Estado:"
+                       FontSize="Micro"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"/>
+
+                <Entry x:Name="txtEstado"
+                       Placeholder="Operativo"
+                       IsEnabled="False"
+                       FontSize="Micro"
+                       HorizontalOptions="FillAndExpand"
+                       HorizontalTextAlignment="Center"
+                       VerticalOptions="Start"/>
+
+                <Label Text="* Por defecto al crear un nuevo Usuario" 
+                       WidthRequest="94"
+                       TextColor="#B9B99C"
+                       FontSize="Micro"
+                       VerticalTextAlignment="End"
+                       HorizontalTextAlignment="Center"
+                       VerticalOptions="Start"/>
+            </StackLayout>          
+                       
+            <Button x:Name="BtnRegistrarUsuario"
+                    Text="Registrar Usuario"
+                    FontAttributes="Bold"
+                    BorderRadius="10"
+                    BorderWidth="2"
+                    BorderColor="#353535"
+                    BackgroundColor="#545454"
+                    TextColor="LightGoldenrodYellow"
+                    FontSize="Micro"
+                    HeightRequest="33"/>
+
+            <Label Text="Developed by: Byron Bravo"
+                   FontSize="Micro"
+                   HorizontalTextAlignment="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
