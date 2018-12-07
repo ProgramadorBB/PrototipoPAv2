@@ -20,6 +20,10 @@ namespace PrototipoPAv2.Droid
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
+
+
+            // cambiamos de color la barra de actividades de android
+            Window.SetStatusBarColor(Android.Graphics.Color.Black);
         }
     }
 }

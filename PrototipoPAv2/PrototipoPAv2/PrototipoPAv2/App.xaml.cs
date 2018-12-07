@@ -11,7 +11,8 @@ namespace PrototipoPAv2
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage())
+            { BarBackgroundColor = Color.Black , BarTextColor = Color.White };
         }
 
         protected override void OnStart()
