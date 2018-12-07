@@ -8,7 +8,7 @@
     <StackLayout Orientation="Vertical"
                  BackgroundColor="LightGoldenrodYellow"
                  Padding="32"
-                 Spacing="10">
+                 Spacing="9">
         <!-- Place new controls here -->
         <Image WidthRequest="128"
                Source="iconoPA.png"/>
@@ -39,8 +39,8 @@
                 FontAttributes="Bold"
                 TextColor="LightGoldenrodYellow"
                 Clicked="BtnIngresar_Clicked"/>
-        
-        <Label Text="Developed by: Byron Bravo"
+
+        <Label Text="Developed by: B.M.V. Solutions®"
                FontSize="Micro"
                HorizontalTextAlignment="Center"/>
 

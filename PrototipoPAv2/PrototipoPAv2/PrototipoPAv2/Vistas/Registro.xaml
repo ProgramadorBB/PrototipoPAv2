@@ -6,7 +6,7 @@
         
         <StackLayout Orientation="Vertical"
                      Padding="22"
-                     Spacing="2"
+                     Spacing="4"
                      BackgroundColor="LightGoldenrodYellow">
 
             <StackLayout Orientation="Horizontal"
@@ -104,7 +104,13 @@
                     FontSize="Micro"
                     HeightRequest="33"/>
 
-            <Label Text="Developed by: Byron Bravo"
+            <Label Text=""
+                   x:Name="lblMensaje"
+                   FontSize="Micro"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+
+            <Label Text="Developed by: B.M.V. Solutions®"
                    FontSize="Micro"
                    HorizontalTextAlignment="Center"/>
         </StackLayout>
