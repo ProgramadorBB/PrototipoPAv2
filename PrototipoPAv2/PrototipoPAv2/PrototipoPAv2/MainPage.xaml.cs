@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using PrototipoPAv2.Vistas;
+using PrototipoPAv2.Conexiones;
 
 namespace PrototipoPAv2
 {
@@ -16,9 +17,22 @@ namespace PrototipoPAv2
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private async void BtnIngresar_Clicked(object sender, EventArgs e)
+        private void BtnIngresar_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Registro());
+            //await Navigation.PushAsync(new Registro());
+
+            lblMensaje.Text = string.Empty;
+            Boolean isUserExist = UsuarioRepository.Instancia.AttempLogin(txtEmail.Text,txtContraseña.Text);            
+
+            if (isUserExist.Equals(true))
+            {
+                lblMensaje.Text = "Usuario correcto";
+            }
+            else
+            {
+                lblMensaje.Text = UsuarioRepository.Instancia.EstadoMensaje; ;
+            }
+
         }
     }
 }

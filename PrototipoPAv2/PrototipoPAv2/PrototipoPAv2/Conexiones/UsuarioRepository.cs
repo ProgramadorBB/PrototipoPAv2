@@ -96,5 +96,35 @@ namespace PrototipoPAv2.Conexiones
             return Enumerable.Empty<Usuario>();
         }
 
+        public Boolean AttempLogin(string email, string contraseña)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(email))
+                    throw new Exception("Ingrese un email válido");
+                if (string.IsNullOrEmpty(contraseña))
+                    throw new Exception("Ingrese Contraseña válida");
+                var usuario = from u in con.Table<Usuario>()
+                              where u.Email == email && u.Contraseña == contraseña 
+                              select u;
+
+                Usuario user = usuario.SingleOrDefault();
+
+                if (user != null)
+                {
+                    return true;
+                }
+
+            }
+            catch (Exception e)
+            {
+                EstadoMensaje = e.Message;
+                return false;
+            }
+            
+            EstadoMensaje = "Usuario no registrado";
+            return false;
+        }
+
     }
 }

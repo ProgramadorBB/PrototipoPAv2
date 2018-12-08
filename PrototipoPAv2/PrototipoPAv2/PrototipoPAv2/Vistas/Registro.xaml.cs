@@ -80,7 +80,17 @@ namespace PrototipoPAv2.Vistas
                     string _estado = txtEstado.Text;
 
                     UsuarioRepository.Instancia.AddNuevoUsuario(_email,_contraseña,_nombre,_apellido,_color,_tipo,_estado);
-                    lblMensaje.Text = UsuarioRepository.Instancia.EstadoMensaje;
+
+                    string _mensaje = UsuarioRepository.Instancia.EstadoMensaje;
+
+                    if(_mensaje.Equals("Constraint"))
+                    {
+                        lblMensaje.Text = "El usuario ya se encuentra registrado";
+                    }
+                    else
+                    {
+                        lblMensaje.Text = UsuarioRepository.Instancia.EstadoMensaje;
+                    }
                 }
                 else
                 {
