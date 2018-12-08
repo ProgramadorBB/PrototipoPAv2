@@ -14,6 +14,9 @@ namespace PrototipoPAv2.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            // cambiamos de color la barra de actividades de android
+            Window.SetStatusBarColor(Android.Graphics.Color.Black);
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
@@ -23,10 +26,7 @@ namespace PrototipoPAv2.Droid
 
             string dbPath = FileAccess.GetLocalFilePath("usuarios.db3");
             LoadApplication(new App(dbPath));
-
-
-            // cambiamos de color la barra de actividades de android
-            Window.SetStatusBarColor(Android.Graphics.Color.Black);
+            
         }
     }
 }

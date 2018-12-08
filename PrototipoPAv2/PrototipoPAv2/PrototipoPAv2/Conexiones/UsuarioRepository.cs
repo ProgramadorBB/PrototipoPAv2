@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SQLite;
+using SQLitePCL;
 using PrototipoPAv2.Modelo;// llamamos a la carpeta modelo para poder usar la clase usuario
 
 namespace PrototipoPAv2.Conexiones
@@ -19,7 +20,7 @@ namespace PrototipoPAv2.Conexiones
                 if (instancia == null)
                     throw new Exception("Debe llamar al Inicializador");
 
-                return Instancia;
+                return instancia;
             }
                 
         }
@@ -28,6 +29,7 @@ namespace PrototipoPAv2.Conexiones
         {
             if (filename == null)
                 throw new ArgumentNullException();
+
             if (instancia != null)
                 instancia.con.Close();
 
@@ -51,21 +53,22 @@ namespace PrototipoPAv2.Conexiones
             try
             {
                 if (string.IsNullOrEmpty(email))
-                    throw new Exception("Email inválido");
-                else if (string.IsNullOrEmpty(contraseña))
-                    throw new Exception("Contraseña inválida");
-                else if (string.IsNullOrEmpty(nombre))
-                    throw new Exception("Nombre inválido");
-                else if (string.IsNullOrEmpty(apellido))
-                    throw new Exception("Apellido inválido");
-                else if (string.IsNullOrEmpty(color))
-                    throw new Exception("Color selecionado inválido");
-                else if (string.IsNullOrEmpty(tipo))
-                    throw new Exception("Tipo de usuario inválido");
-                else if (string.IsNullOrEmpty(estado))
-                    throw new Exception("Error en el estado del Usuario");
+                    throw new Exception("email inválido");
+                if (string.IsNullOrEmpty(contraseña))
+                    throw new Exception("contraseña inválida");
+                if (string.IsNullOrEmpty(nombre))
+                    throw new Exception("nombre inválido");
+                if (string.IsNullOrEmpty(apellido))
+                    throw new Exception("apellido inválido");
+                if (string.IsNullOrEmpty(color))
+                    throw new Exception("color inválido");
+                if (string.IsNullOrEmpty(tipo))
+                    throw new Exception("tipo inválido");
+                if (string.IsNullOrEmpty(estado))
+                    throw new Exception("estado inválido");
 
-                    result = con.Insert(new Usuario() {
+
+                result = con.Insert(new Usuario() {
                                      Email = email,
                                      Contraseña = contraseña,
                                      Nombre = nombre,

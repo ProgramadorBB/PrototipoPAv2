@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
 using SQLite;
 
 namespace PrototipoPAv2.Modelo
 {
-    [Table("Usuarios")]
+    [Table("usuarios")]
     public class Usuario
     {
-        [PrimaryKey, AutoIncrement, Column("id")]
+        [PrimaryKey, AutoIncrement, Column("_id")]
         public int Id { get; set; }
         [MaxLength(100),Unique]
         public string Email { get; set; }

@@ -65,23 +65,34 @@ namespace PrototipoPAv2.Vistas
         private void BtnRegistrarUsuario_Clicked(object sender, EventArgs e)
         {
             lblMensaje.Text = string.Empty;
-            
+            lblMensaje.TextColor = Color.DarkRed;
+
             if (pkColor.SelectedIndex >= 0)
             {
-                lblMensaje.TextColor = Color.DarkRed;
+                if(pkTipo.SelectedIndex >= 0)
+                {
+                    string _email = txtEmail.Text;
+                    string _contraseña = txtContraseña.Text;
+                    string _nombre = txtNombre.Text;
+                    string _apellido = txtApellido.Text;
+                    string _color = pkColor.SelectedItem.ToString();
+                    string _tipo = pkTipo.SelectedItem.ToString();
+                    string _estado = txtEstado.Text;
 
-                UsuarioRepository.Instancia.AddNuevoUsuario(
-                 txtEmail.Text, txtContraseña.Text, txtNombre.Text,
-                 txtApellido.Text, pkColor.SelectedItem.ToString(),
-                 pkTipo.SelectedItem.ToString(), txtEstado.Text);
+                    UsuarioRepository.Instancia.AddNuevoUsuario(_email,_contraseña,_nombre,_apellido,_color,_tipo,_estado);
+                    lblMensaje.Text = UsuarioRepository.Instancia.EstadoMensaje;
+                }
+                else
+                {
+                    lblMensaje.Text = "Error: Seleccione el tipo de usuario";
+                }
             }
             else
             {
-                lblMensaje.TextColor = Color.Red;
-                lblMensaje.Text = "*AVISO: Debe elegir un color";
+                lblMensaje.Text = "Error: Seleccione el color del usuario";
             }
-                 
             
+                            
         }
     }
 }
