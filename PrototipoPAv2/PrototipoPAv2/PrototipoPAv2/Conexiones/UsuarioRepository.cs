@@ -103,7 +103,7 @@ namespace PrototipoPAv2.Conexiones
                 if (string.IsNullOrEmpty(email))
                     throw new Exception("Ingrese un email válido");
                 if (string.IsNullOrEmpty(contraseña))
-                    throw new Exception("Ingrese Contraseña válida");
+                    throw new Exception("Ingrese una Contraseña válida");
                 var usuario = from u in con.Table<Usuario>()
                               where u.Email == email && u.Contraseña == contraseña 
                               select u;
