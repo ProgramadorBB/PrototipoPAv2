@@ -17,7 +17,7 @@ namespace PrototipoPAv2
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void BtnIngresar_Clicked(object sender, EventArgs e)
+        private async void BtnIngresar_Clicked(object sender, EventArgs e)
         {
             //await Navigation.PushAsync(new Registro());
 
@@ -26,7 +26,7 @@ namespace PrototipoPAv2
 
             if (isUserExist.Equals(true))
             {
-                lblMensaje.Text = "Usuario correcto";
+                await Navigation.PushAsync(new menuAdmin());
             }
             else
             {

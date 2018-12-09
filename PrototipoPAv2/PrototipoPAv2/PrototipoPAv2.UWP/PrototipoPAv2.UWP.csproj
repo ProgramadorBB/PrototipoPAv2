@@ -151,7 +151,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.9" />
     <PackageReference Include="Xamarin.Forms">
-      <Version>2.4.0.91020</Version>
+      <Version>3.4.0.1008975</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="..\PrototipoPAv2\PrototipoPAv2.projitems" Label="Shared" />

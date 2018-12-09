@@ -3,29 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PrototipoPAv2.Vistas.menuAdmin">
     <ContentPage.Content>
-        
-        <StackLayout Orientation="Vertical"
-                     Padding="32"
-                     Spacing="10">
 
-            <Button x:Name="btnGetAllUsers"
+        <ScrollView>
+            <StackLayout Orientation="Vertical"
+                     Padding="20"
+                     Spacing="5">
+
+                <Label
+                    Text="Menú Administrador"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"/>
+
+                <Button x:Name="btnRegistrarUsuario"
+                        Text="Registrar Usuario"
+                        Clicked="BtnRegistrarUsuario_Clicked"/>
+
+                <Button x:Name="btnGetAllUsers"
                     Text="Cargar usuarios"
                     Clicked="BtnGetAllUsers_Clicked"/>
-            
 
-            <Grid>
-                <ListView ItemsSource="{Binding}"
+                <Grid>
+                    <ListView ItemsSource="{Binding}"
                           ItemTapped="OnUpdateUser">
-                    <DataTemplate>
-                        <TextCell>
-                            
-                        </TextCell>
-                    </DataTemplate>
-                    
-                </ListView>
-            </Grid>
-
-        </StackLayout>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextCell Text="{Binding Nombre}"  
+                                  Detail="{Binding Email}">
+                                    <TextCell.ContextActions>
+                                        <MenuItem Clicked="OnDeleteUser"
+                                          CommandParameter="{Binding}"
+                                          Text="Eliminar"                                          
+                                          IsDestructive="True"/>
+                                        <MenuItem Clicked="OnSelectUser"
+                                          CommandParameter="{Binding}"
+                                          Text="Ver Detalle"                                          
+                                          IsDestructive="True"></MenuItem>
+                                    </TextCell.ContextActions>                                    
+                                </TextCell>
+                            </DataTemplate>                           
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
         
     </ContentPage.Content>
 </ContentPage>
