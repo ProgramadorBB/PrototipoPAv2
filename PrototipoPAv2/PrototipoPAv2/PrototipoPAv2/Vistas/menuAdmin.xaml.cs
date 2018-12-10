@@ -66,5 +66,10 @@ namespace PrototipoPAv2.Vistas
         {
             await Navigation.PushAsync(new Registro());
         }
+
+        private async void BtnCerrarSesion_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
     }
 }

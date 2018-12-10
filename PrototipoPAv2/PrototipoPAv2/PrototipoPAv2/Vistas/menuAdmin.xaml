@@ -81,7 +81,21 @@
                         </ListView.ItemTemplate>
                     </ListView>
                 </Grid>
-            </StackLayout>
+
+                <Button x:Name="btnCerrarSesion"
+                        Text="Cerrar Sesión"
+                        FontAttributes="Bold"
+                        BorderRadius="10"
+                        BorderWidth="2"
+                        BorderColor="#353535"
+                        BackgroundColor="#545454"
+                        TextColor="LightGoldenrodYellow"
+                        FontSize="Micro"
+                        HeightRequest="33"
+                        Clicked="BtnCerrarSesion_Clicked"/>
+
+            </StackLayout>           
+            
         </ScrollView>
         
     </ContentPage.Content>

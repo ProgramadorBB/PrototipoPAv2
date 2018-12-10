@@ -19,20 +19,40 @@ namespace PrototipoPAv2
 
         private async void BtnIngresar_Clicked(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new Registro());
 
             lblMensaje.Text = string.Empty;
-            Boolean isUserExist = UsuarioRepository.Instancia.AttempLogin(txtEmail.Text,txtContraseña.Text);            
 
-            if (isUserExist.Equals(true))
+            if (string.IsNullOrEmpty(txtEmail.Text))
             {
-                await Navigation.PushAsync(new menuAdmin());
+                lblMensaje.Text = "Debe ingresar un Email";
             }
             else
             {
-                lblMensaje.Text = UsuarioRepository.Instancia.EstadoMensaje; ;
-            }
+                if (string.IsNullOrEmpty(txtContraseña.Text))
+                {
+                    lblMensaje.Text = "Debe ingresar una contraseña";
+                }
+                else
+                {
+                    if (txtEmail.Text.Equals("Admin") && txtContraseña.Text.Equals("123456"))
+                    {
+                        await Navigation.PushAsync(new menuAdmin());
+                    }
+                    else
+                    {
+                        Boolean isUserExist = UsuarioRepository.Instancia.AttempLogin(txtEmail.Text, txtContraseña.Text);
 
+                        if (isUserExist.Equals(true))
+                        {
+                            await Navigation.PushAsync(new menuEmpaque());
+                        }
+                        else
+                        {
+                            lblMensaje.Text = UsuarioRepository.Instancia.EstadoMensaje; ;
+                        }
+                    }
+                }
+            }
         }
     }
 }
