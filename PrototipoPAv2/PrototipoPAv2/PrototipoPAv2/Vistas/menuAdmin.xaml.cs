@@ -43,8 +43,22 @@ namespace PrototipoPAv2.Vistas
             await Navigation.PushAsync(new EditUserPage(users,u));
         }
 
-        private void OnDeleteUser(object sender, EventArgs e)
+        private async void OnDeleteUser(object sender, EventArgs e)
         {
+            MenuItem item = (MenuItem)sender;
+            Usuario user = (Usuario)item.CommandParameter;
+            
+            if(user != null)
+            {
+                if(await this.DisplayAlert("¿Borrar usuario [id: " + user.Id+ "]?",
+                    "El usuario [" + user.Nombre + " " + user.Apellido + "] Se eliminara de forma permanente",
+                    "Eliminar usuario",
+                    "Cancelar") == true)
+                {
+                    UsuarioRepository.Instancia.DeleteUser(user.Id);
+                    users.Remove(user);
+                }
+            }
 
         }
         

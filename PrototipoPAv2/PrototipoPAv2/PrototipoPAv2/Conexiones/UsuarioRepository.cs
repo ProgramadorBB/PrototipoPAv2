@@ -147,5 +147,25 @@ namespace PrototipoPAv2.Conexiones
             return result;
         }
 
+        public int DeleteUser(int id)
+        {
+            int result = 0;
+            try
+            {
+                result = con.Delete<Usuario>(id);
+
+                if(result > 0)
+                {
+                    EstadoMensaje = string.Format("Eliminado [id: {0}]", id);
+                }
+
+
+            }catch(Exception e)
+            {
+                EstadoMensaje = e.Message;
+            }
+            return result;
+        }
+
     }
 }
