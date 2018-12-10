@@ -118,25 +118,34 @@ namespace PrototipoPAv2.Vistas
                 {
                     if (_tipo.Equals("Empaque") || _tipo.Equals("Coordinador@"))
                     {
-                        user.Email = _email;
-                        user.Contraseña = _contraseña;
-                        user.Nombre = _nombre;
-                        user.Apellido = _apellido;
-                        user.Tipo = _tipo;
-                        user.Estado = _estado;
+                        if(_estado.Equals("Operativo") || _estado.Equals("Bloqueado"))
+                        {
+                            user.Email = _email;
+                            user.Contraseña = _contraseña;
+                            user.Nombre = _nombre;
+                            user.Apellido = _apellido;
+                            user.Tipo = _tipo;
+                            user.Estado = _estado;
 
-                        UsuarioRepository.Instancia.UpdateUser(user);
-                        string mensaje = UsuarioRepository
-                            .Instancia
-                            .EstadoMensaje;
+                            UsuarioRepository.Instancia.UpdateUser(user);
+                            string mensaje = UsuarioRepository
+                                .Instancia
+                                .EstadoMensaje;
 
-                        await this.DisplayAlert("Estado de usuario",
-                            mensaje + ", Usuario actualizado correctamente"
-                            , "OK");
+                            await this.DisplayAlert("Estado de usuario",
+                                mensaje + ", Usuario actualizado correctamente"
+                                , "OK");
 
-                        int pos = users.IndexOf(user);
-                        users.RemoveAt(pos);
-                        users.Insert(pos, user);
+                            int pos = users.IndexOf(user);
+                            users.RemoveAt(pos);
+                            users.Insert(pos, user);
+                        }
+                        else
+                        {
+                            await this.DisplayAlert("Aviso:",
+                        "Se cancelo la actualización, El estado de usuario debe ser escrito exactamente como: Operativo o Bloqueado",
+                        "Salir");
+                        }
                     }
                     else
                     {
