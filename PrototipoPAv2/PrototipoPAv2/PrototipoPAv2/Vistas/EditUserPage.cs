@@ -56,7 +56,7 @@ namespace PrototipoPAv2.Vistas
                         }),                        
                         (tipoCell = new EntryCell
                         {
-                            Label = "Tipo", LabelColor = Color.Black,
+                            Label = "Tipo de usaurio:", LabelColor = Color.Black,
                             Placeholder = "add Tipo",
                             Text = user.Tipo
                         }),
@@ -116,26 +116,34 @@ namespace PrototipoPAv2.Vistas
                 }
                 else
                 {
-                    user.Email = _email;
-                    user.Contraseña = _contraseña;
-                    user.Nombre = _nombre;
-                    user.Apellido = _apellido;
-                    //user.Color = user.Color;
-                    user.Tipo = _tipo;
-                    user.Estado = _estado;
+                    if (_tipo.Equals("Empaque") || _tipo.Equals("Coordinador@"))
+                    {
+                        user.Email = _email;
+                        user.Contraseña = _contraseña;
+                        user.Nombre = _nombre;
+                        user.Apellido = _apellido;
+                        user.Tipo = _tipo;
+                        user.Estado = _estado;
 
-                    UsuarioRepository.Instancia.UpdateUser(user);
-                    string mensaje = UsuarioRepository
-                        .Instancia
-                        .EstadoMensaje;
+                        UsuarioRepository.Instancia.UpdateUser(user);
+                        string mensaje = UsuarioRepository
+                            .Instancia
+                            .EstadoMensaje;
 
-                    await this.DisplayAlert("Estado de usuario",
-                        mensaje + ", Usuario actualizado correctamente"
-                        , "OK");
+                        await this.DisplayAlert("Estado de usuario",
+                            mensaje + ", Usuario actualizado correctamente"
+                            , "OK");
 
-                    int pos = users.IndexOf(user);
-                    users.RemoveAt(pos);
-                    users.Insert(pos, user);
+                        int pos = users.IndexOf(user);
+                        users.RemoveAt(pos);
+                        users.Insert(pos, user);
+                    }
+                    else
+                    {
+                        await this.DisplayAlert("Aviso:",
+                        "Se cancelo la actualización, El tipo de usuario debe ser escrito exactamente como: Empaque o Coordinador@",
+                        "Salir");
+                    }
                 }
 
                 await Navigation.PushAsync(new menuAdmin());
