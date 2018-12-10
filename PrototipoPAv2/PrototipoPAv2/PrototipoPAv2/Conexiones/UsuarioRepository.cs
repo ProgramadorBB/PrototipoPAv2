@@ -126,5 +126,26 @@ namespace PrototipoPAv2.Conexiones
             return false;
         }
 
+        public int UpdateUser(Usuario u)
+        {
+            int result = 0;
+
+            try
+            {
+                result = con.Update(u);
+
+                if(result > 0)
+                {
+                    EstadoMensaje = string.Format("Actualizando [Id: {0}]", u.Id);
+                }
+
+            }catch(Exception e)
+            {
+                EstadoMensaje = e.Message;
+            }
+
+            return result;
+        }
+
     }
 }

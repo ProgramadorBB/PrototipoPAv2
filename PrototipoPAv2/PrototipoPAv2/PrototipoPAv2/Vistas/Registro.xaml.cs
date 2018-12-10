@@ -27,7 +27,7 @@ namespace PrototipoPAv2.Vistas
             pkColor.Items.Add("Celeste");
 
             pkTipo.Items.Add("Empaque");
-            pkTipo.Items.Add("Coordinador");
+            pkTipo.Items.Add("Coordinador@");
             pkTipo.SelectedIndex = 0;
         }
 

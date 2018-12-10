@@ -4,7 +4,8 @@
              x:Class="PrototipoPAv2.Vistas.menuAdmin">
     <ContentPage.Content>
 
-        <ScrollView>
+        <ScrollView
+            BackgroundColor="LightGoldenrodYellow">
             <StackLayout Orientation="Vertical"
                      Padding="20"
                      Spacing="5">
@@ -17,30 +18,65 @@
 
                 <Button x:Name="btnRegistrarUsuario"
                         Text="Registrar Usuario"
+                        FontAttributes="Bold"
+                        BorderRadius="10"
+                        BorderWidth="2"
+                        BorderColor="#353535"
+                        BackgroundColor="#545454"
+                        TextColor="LightGoldenrodYellow"
+                        FontSize="Micro"
+                        HeightRequest="33"
                         Clicked="BtnRegistrarUsuario_Clicked"/>
 
                 <Button x:Name="btnGetAllUsers"
-                    Text="Cargar usuarios"
-                    Clicked="BtnGetAllUsers_Clicked"/>
+                        Text="Cargar usuarios"
+                        FontAttributes="Bold"
+                        BorderRadius="10"
+                        BorderWidth="2"
+                        BorderColor="#353535"
+                        BackgroundColor="#545454"
+                        TextColor="LightGoldenrodYellow"
+                        FontSize="Micro"
+                        HeightRequest="33"
+                        Clicked="BtnGetAllUsers_Clicked"/>
 
                 <Grid>
                     <ListView ItemsSource="{Binding}"
                           ItemTapped="OnUpdateUser">
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <TextCell Text="{Binding Nombre}"  
-                                  Detail="{Binding Email}">
-                                    <TextCell.ContextActions>
+                                <ViewCell>
+                                    <ViewCell.ContextActions>
                                         <MenuItem Clicked="OnDeleteUser"
                                           CommandParameter="{Binding}"
                                           Text="Eliminar"                                          
                                           IsDestructive="True"/>
-                                        <MenuItem Clicked="OnSelectUser"
-                                          CommandParameter="{Binding}"
-                                          Text="Ver Detalle"                                          
-                                          IsDestructive="True"></MenuItem>
-                                    </TextCell.ContextActions>                                    
-                                </TextCell>
+                                    </ViewCell.ContextActions>
+                                    <ViewCell.View>
+                                        <StackLayout Orientation="Vertical">
+                                            <StackLayout Orientation="Horizontal">                                                
+                                                <Label FontSize="Small" TextColor="DarkRed" Text="{Binding Id}"
+                                                       VerticalTextAlignment="Center"/>
+                                                <Image Source="user.png"
+                                                       WidthRequest="35"
+                                                       VerticalOptions="Center"/>
+                                                <StackLayout Orientation="Vertical">
+                                                    <StackLayout Orientation="Horizontal">
+                                                        <Label FontSize="Micro" TextColor="Black" Text="{Binding Tipo}"/>
+                                                        <Label FontSize="Micro" Text="-"/>
+                                                        <Label FontSize="Micro" TextColor="Black" Text="{Binding Nombre}"/>
+                                                        <Label FontSize="Micro" TextColor="Black" Text="{Binding Apellido}"/>
+                                                    </StackLayout>
+                                                    <StackLayout Orientation="Horizontal">
+                                                        <Label FontSize="Micro" Text="Correo:"/>
+                                                        <Label FontSize="Micro" Text="{Binding Email}"/>
+                                                    </StackLayout>
+                                                </StackLayout>                                                
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </ViewCell.View>                                  
+                                                                      
+                                </ViewCell>
                             </DataTemplate>                           
                         </ListView.ItemTemplate>
                     </ListView>

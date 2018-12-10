@@ -21,6 +21,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Modelo\Usuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vistas\EditUserPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Vistas\menuAdmin.xaml.cs">
       <DependentUpon>menuAdmin.xaml</DependentUpon>
       <SubType>Code</SubType>

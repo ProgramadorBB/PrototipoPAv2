@@ -34,10 +34,10 @@
                 BorderRadius="10"
                 BorderWidth="2"
                 BorderColor="#353535"
-                Text="Ingresar"
                 BackgroundColor="#545454"
                 FontAttributes="Bold"
                 TextColor="LightGoldenrodYellow"
+                Text="Ingresar"
                 Clicked="BtnIngresar_Clicked"/>
 
         <Label Text=""

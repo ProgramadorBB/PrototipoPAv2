@@ -25,6 +25,7 @@ namespace PrototipoPAv2.Vistas
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
+
         private void BtnGetAllUsers_Clicked(object sender, EventArgs e)
         {            
             var allUsers = UsuarioRepository.Instancia.GetAllUsuarios();
@@ -33,24 +34,20 @@ namespace PrototipoPAv2.Vistas
             foreach (Usuario user in allUsers)
                 if (users.All(u => u.Id != user.Id))
                     users.Add(user);
-
         }
 
-        private void OnUpdateUser(object sender, ItemTappedEventArgs e)
+
+        private async void OnUpdateUser(object sender, ItemTappedEventArgs e)
         {
-            //ListView.ite
+            Usuario u = (Usuario)e.Item;
+            await Navigation.PushAsync(new EditUserPage(users,u));
         }
 
         private void OnDeleteUser(object sender, EventArgs e)
         {
 
         }
-
-        private void OnSelectUser(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private async void BtnRegistrarUsuario_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Registro());
