@@ -20,9 +20,35 @@ namespace PrototipoPAv2.Vistas
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void BtnActualizarPerfil_Clicked(object sender, EventArgs e)
+        private async void BtnActualizarPerfil_Clicked(object sender, EventArgs e)
         {
-            
+            if (string.IsNullOrWhiteSpace(txtEmail.Text)
+                || string.IsNullOrWhiteSpace(txtContraseña.Text)
+                || string.IsNullOrWhiteSpace(txtNombre.Text)
+                || string.IsNullOrWhiteSpace(txtApellido.Text))
+            {
+                await this.DisplayAlert("Faltan datos",
+                        "Datos incorrectos y/o inválidos.",
+                        "Cancelar");
+            }
+            else
+            {
+                Usuario u = Application.Current.Properties["sesion"] as Usuario;
+                u.Email = txtEmail.Text;
+                u.Contraseña = txtContraseña.Text;
+                u.Nombre = txtNombre.Text;
+                u.Apellido = txtApellido.Text;
+
+                UsuarioRepository.Instancia.UpdateUser(u);
+                Application.Current.Properties["sesion"] = u;
+                
+                await this.DisplayAlert("Usuario [id:"+u.Id+ "]",
+                        "Actualizado correctamente.",
+                        "Ok");
+
+                await Navigation.PushAsync(new menuEmpaque());
+            }
+
         }
 
         private void BtnCargarDatos_Clicked(object sender, EventArgs e)

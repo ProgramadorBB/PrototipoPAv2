@@ -11,6 +11,26 @@
                    FontSize="Large"/>
 
             <StackLayout Orientation="Horizontal">
+                <Label Text="Nombre:"
+                       VerticalTextAlignment="Center"
+                       FontSize="Micro"/>
+                <Entry x:Name="txtNombre"
+                       Placeholder="add nombre"
+                       FontSize="Micro"
+                       HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Apellido:"
+                       VerticalTextAlignment="Center"
+                       FontSize="Micro"/>
+                <Entry x:Name="txtApellido"
+                       Placeholder="add apellido"
+                       FontSize="Micro"
+                       HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
                 <Label Text="Email:"
                        VerticalTextAlignment="Center"
                        FontSize="Micro"/>
@@ -35,27 +55,7 @@
                         WidthRequest="71"
                         HeightRequest="35"
                         Clicked="BtnMostrarOcultar_Clicked"/>
-            </StackLayout>
-
-            <StackLayout Orientation="Horizontal">
-                <Label Text="Nombre:"
-                       VerticalTextAlignment="Center"
-                       FontSize="Micro"/>
-                <Entry x:Name="txtNombre"
-                       Placeholder="add nombre"
-                       FontSize="Micro"
-                       HorizontalOptions="FillAndExpand"/>
-            </StackLayout>
-
-            <StackLayout Orientation="Horizontal">
-                <Label Text="Apellido:"
-                       VerticalTextAlignment="Center"
-                       FontSize="Micro"/>
-                <Entry x:Name="txtApellido"
-                       Placeholder="add apellido"
-                       FontSize="Micro"
-                       HorizontalOptions="FillAndExpand"/>
-            </StackLayout>
+            </StackLayout>            
 
             <Button x:Name="btnCargarDatos"
                     Text="Cargar Datos"
