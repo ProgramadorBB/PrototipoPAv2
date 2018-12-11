@@ -34,19 +34,29 @@ namespace PrototipoPAv2.Vistas
             else
             {
                 Usuario u = Application.Current.Properties["sesion"] as Usuario;
-                u.Email = txtEmail.Text;
-                u.Contraseña = txtContraseña.Text;
-                u.Nombre = txtNombre.Text;
-                u.Apellido = txtApellido.Text;
+                if (txtEmail.Text.Equals(u.Email) && txtContraseña.Text.Equals(u.Contraseña) && txtNombre.Text.Equals(u.Nombre) && txtApellido.Text.Equals(u.Apellido))
+                {
+                    await this.DisplayAlert("Error",
+                            "Los datos ingresados ya se encuentran registrados.",
+                            "Cancelar");
+                }
+                else
+                {
+                    u.Email = txtEmail.Text;
+                    u.Contraseña = txtContraseña.Text;
+                    u.Nombre = txtNombre.Text;
+                    u.Apellido = txtApellido.Text;
 
-                UsuarioRepository.Instancia.UpdateUser(u);
-                Application.Current.Properties["sesion"] = u;
-                
-                await this.DisplayAlert("Usuario [id:"+u.Id+ "]",
-                        "Actualizado correctamente.",
-                        "Ok");
+                    UsuarioRepository.Instancia.UpdateUser(u);
+                    Application.Current.Properties["sesion"] = u;
 
-                await Navigation.PushAsync(new menuEmpaque());
+                    await this.DisplayAlert("Usuario [id:" + u.Id + "]",
+                            "Actualizado correctamente.",
+                            "Ok");
+
+                    await Navigation.PushAsync(new menuEmpaque());
+                }
+                                
             }
 
         }
