@@ -23,6 +23,16 @@ namespace PrototipoPAv2.Vistas
             BindingContext = users;
 			InitializeComponent ();
             NavigationPage.SetHasNavigationBar(this, false);
+            if (Application.Current.Properties.ContainsKey("privilegio"))
+            {
+                string privilegio = Application.Current.Properties["privilegio"]
+                    as string;
+                if(privilegio != "Administrador@")
+                {
+                    this.DisplayAlert("Error", "Usuario no autorizado", "salir");
+                    this.Navigation.PushAsync(new MainPage());
+                }
+            }
         }
 
 
@@ -69,7 +79,8 @@ namespace PrototipoPAv2.Vistas
 
         private async void BtnCerrarSesion_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage());
+           await Navigation.PopToRootAsync();
+            //await Navigation.PushAsync(new MainPage());
         }
     }
 }

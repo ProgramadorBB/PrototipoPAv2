@@ -14,9 +14,18 @@
                     Text="Menú Administrador"
                     FontSize="Large"
                     FontAttributes="Bold"
+                    Opacity="0.8"
+                    BackgroundColor="#545454"
+                    TextColor="LightGoldenrodYellow"
                     HorizontalTextAlignment="Center"/>
 
-                <Button x:Name="btnRegistrarUsuario"
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="CenterAndExpand">
+                    
+                    <StackLayout Orientation="Vertical"
+                                 WidthRequest="148">
+
+                        <Button x:Name="btnRegistrarUsuario"
                         Text="Registrar Usuario"
                         FontAttributes="Bold"
                         BorderRadius="10"
@@ -28,7 +37,7 @@
                         HeightRequest="33"
                         Clicked="BtnRegistrarUsuario_Clicked"/>
 
-                <Button x:Name="btnGetAllUsers"
+                        <Button x:Name="btnGetAllUsers"
                         Text="Cargar usuarios"
                         FontAttributes="Bold"
                         BorderRadius="10"
@@ -39,7 +48,23 @@
                         FontSize="Micro"
                         HeightRequest="33"
                         Clicked="BtnGetAllUsers_Clicked"/>
+                    </StackLayout>
 
+                    <Button x:Name="btnCerrarSesion"
+                        Text="Cerrar Sesión"
+                        FontAttributes="Bold"
+                        BorderRadius="10"
+                        BorderWidth="2"
+                        BorderColor="#353535"
+                        BackgroundColor="#545454"
+                        TextColor="LightGoldenrodYellow"
+                        FontSize="Micro"
+                        HeightRequest="33"
+                        WidthRequest="62"
+                        Clicked="BtnCerrarSesion_Clicked"/>
+
+                </StackLayout>                
+               
                 <Grid>
                     <ListView ItemsSource="{Binding}"
                           ItemTapped="OnUpdateUser">
@@ -80,19 +105,7 @@
                             </DataTemplate>                           
                         </ListView.ItemTemplate>
                     </ListView>
-                </Grid>
-
-                <Button x:Name="btnCerrarSesion"
-                        Text="Cerrar Sesión"
-                        FontAttributes="Bold"
-                        BorderRadius="10"
-                        BorderWidth="2"
-                        BorderColor="#353535"
-                        BackgroundColor="#545454"
-                        TextColor="LightGoldenrodYellow"
-                        FontSize="Micro"
-                        HeightRequest="33"
-                        Clicked="BtnCerrarSesion_Clicked"/>
+                </Grid>                
 
             </StackLayout>           
             

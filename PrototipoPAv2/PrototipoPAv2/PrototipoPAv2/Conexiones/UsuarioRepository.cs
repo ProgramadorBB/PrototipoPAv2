@@ -126,6 +126,18 @@ namespace PrototipoPAv2.Conexiones
             return false;
         }
 
+        public Usuario userType (string email, string contraseña)
+        {
+            var usuario = from u in con.Table<Usuario>()
+                          where u.Email == email && u.Contraseña == contraseña
+                          select u;
+
+            Usuario uTipo = usuario.SingleOrDefault();
+
+            return uTipo;
+
+        }
+
         public int UpdateUser(Usuario u)
         {
             int result = 0;
