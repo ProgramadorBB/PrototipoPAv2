@@ -2348,26 +2348,26 @@ namespace PrototipoPAv2.Droid
 			// aapt resource value: 0x7f020055
 			public const int avd_hide_password = 2130837589;
 			
-			// aapt resource value: 0x7f02013e
-			public const int avd_hide_password_1 = 2130837822;
+			// aapt resource value: 0x7f02015b
+			public const int avd_hide_password_1 = 2130837851;
 			
-			// aapt resource value: 0x7f02013f
-			public const int avd_hide_password_2 = 2130837823;
+			// aapt resource value: 0x7f02015c
+			public const int avd_hide_password_2 = 2130837852;
 			
-			// aapt resource value: 0x7f020140
-			public const int avd_hide_password_3 = 2130837824;
+			// aapt resource value: 0x7f02015d
+			public const int avd_hide_password_3 = 2130837853;
 			
 			// aapt resource value: 0x7f020056
 			public const int avd_show_password = 2130837590;
 			
-			// aapt resource value: 0x7f020141
-			public const int avd_show_password_1 = 2130837825;
+			// aapt resource value: 0x7f02015e
+			public const int avd_show_password_1 = 2130837854;
 			
-			// aapt resource value: 0x7f020142
-			public const int avd_show_password_2 = 2130837826;
+			// aapt resource value: 0x7f02015f
+			public const int avd_show_password_2 = 2130837855;
 			
-			// aapt resource value: 0x7f020143
-			public const int avd_show_password_3 = 2130837827;
+			// aapt resource value: 0x7f020160
+			public const int avd_show_password_3 = 2130837856;
 			
 			// aapt resource value: 0x7f020057
 			public const int design_bottom_navigation_item_background = 2130837591;
@@ -3032,11 +3032,11 @@ namespace PrototipoPAv2.Droid
 			// aapt resource value: 0x7f020133
 			public const int notification_icon_background = 2130837811;
 			
-			// aapt resource value: 0x7f02013c
-			public const int notification_template_icon_bg = 2130837820;
+			// aapt resource value: 0x7f020159
+			public const int notification_template_icon_bg = 2130837849;
 			
-			// aapt resource value: 0x7f02013d
-			public const int notification_template_icon_low_bg = 2130837821;
+			// aapt resource value: 0x7f02015a
+			public const int notification_template_icon_low_bg = 2130837850;
 			
 			// aapt resource value: 0x7f020134
 			public const int notification_tile_bg = 2130837812;
@@ -3051,16 +3051,103 @@ namespace PrototipoPAv2.Droid
 			public const int octubre = 2130837815;
 			
 			// aapt resource value: 0x7f020138
-			public const int septiembre = 2130837816;
+			public const int Reglamento01 = 2130837816;
 			
 			// aapt resource value: 0x7f020139
-			public const int tooltip_frame_dark = 2130837817;
+			public const int Reglamento02 = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int tooltip_frame_light = 2130837818;
+			public const int Reglamento03 = 2130837818;
 			
 			// aapt resource value: 0x7f02013b
-			public const int user = 2130837819;
+			public const int Reglamento04 = 2130837819;
+			
+			// aapt resource value: 0x7f02013c
+			public const int Reglamento05 = 2130837820;
+			
+			// aapt resource value: 0x7f02013d
+			public const int Reglamento06 = 2130837821;
+			
+			// aapt resource value: 0x7f02013e
+			public const int Reglamento07 = 2130837822;
+			
+			// aapt resource value: 0x7f02013f
+			public const int Reglamento08 = 2130837823;
+			
+			// aapt resource value: 0x7f020140
+			public const int Reglamento09 = 2130837824;
+			
+			// aapt resource value: 0x7f020141
+			public const int Reglamento10 = 2130837825;
+			
+			// aapt resource value: 0x7f020142
+			public const int Reglamento11 = 2130837826;
+			
+			// aapt resource value: 0x7f020143
+			public const int Reglamento12 = 2130837827;
+			
+			// aapt resource value: 0x7f020144
+			public const int Reglamento13 = 2130837828;
+			
+			// aapt resource value: 0x7f020145
+			public const int Reglamento14 = 2130837829;
+			
+			// aapt resource value: 0x7f020146
+			public const int Reglamento15 = 2130837830;
+			
+			// aapt resource value: 0x7f020147
+			public const int Reglamento16 = 2130837831;
+			
+			// aapt resource value: 0x7f020148
+			public const int Reglamento17 = 2130837832;
+			
+			// aapt resource value: 0x7f020149
+			public const int Reglamento18 = 2130837833;
+			
+			// aapt resource value: 0x7f02014a
+			public const int Reglamento19 = 2130837834;
+			
+			// aapt resource value: 0x7f02014b
+			public const int Reglamento20 = 2130837835;
+			
+			// aapt resource value: 0x7f02014c
+			public const int Reglamento21 = 2130837836;
+			
+			// aapt resource value: 0x7f02014d
+			public const int Reglamento22 = 2130837837;
+			
+			// aapt resource value: 0x7f02014e
+			public const int Reglamento23 = 2130837838;
+			
+			// aapt resource value: 0x7f02014f
+			public const int Reglamento24 = 2130837839;
+			
+			// aapt resource value: 0x7f020150
+			public const int Reglamento25 = 2130837840;
+			
+			// aapt resource value: 0x7f020151
+			public const int Reglamento26 = 2130837841;
+			
+			// aapt resource value: 0x7f020152
+			public const int Reglamento27 = 2130837842;
+			
+			// aapt resource value: 0x7f020153
+			public const int Reglamento28 = 2130837843;
+			
+			// aapt resource value: 0x7f020154
+			public const int Reglamento29 = 2130837844;
+			
+			// aapt resource value: 0x7f020155
+			public const int septiembre = 2130837845;
+			
+			// aapt resource value: 0x7f020156
+			public const int tooltip_frame_dark = 2130837846;
+			
+			// aapt resource value: 0x7f020157
+			public const int tooltip_frame_light = 2130837847;
+			
+			// aapt resource value: 0x7f020158
+			public const int user = 2130837848;
 			
 			static Drawable()
 			{

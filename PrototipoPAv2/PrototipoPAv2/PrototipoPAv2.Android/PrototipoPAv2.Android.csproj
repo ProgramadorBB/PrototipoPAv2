@@ -142,91 +142,91 @@
     <AndroidResource Include="Resources\drawable\septiembre.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-01.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento02.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-02.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento03.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-03.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento04.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-04.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento05.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-05.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento06.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-06.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento07.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-07.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento08.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-08.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento09.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-09.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento10.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-10.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento11.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-11.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento12.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-12.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento13.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-13.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento14.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-14.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento15.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-15.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento16.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-16.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento17.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-17.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento18.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-18.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento19.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-19.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento20.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-20.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento21.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-21.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento22.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-22.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento23.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-23.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento24.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-24.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento25.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-25.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento26.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-26.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento27.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-27.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento28.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-28.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento29.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Reglamento-29.png" />
+    <AndroidResource Include="Resources\drawable\Reglamento01.png" />
   </ItemGroup>
   <Import Project="..\PrototipoPAv2\PrototipoPAv2.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

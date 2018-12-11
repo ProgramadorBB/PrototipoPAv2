@@ -11,36 +11,36 @@
                 <Label Text="Reglamento Oficial"
                 FontSize="Large"
                 HorizontalOptions="CenterAndExpand" />
-                <Image Source="Reglamento-01.png"/>
-                <Image Source="Reglamento-02.png"/>
-                <Image Source="Reglamento-03.png"/>
-                <Image Source="Reglamento-04.png"/>
-                <Image Source="Reglamento-05.png"/>
-                <Image Source="Reglamento-06.png"/>
-                <Image Source="Reglamento-07.png"/>
-                <Image Source="Reglamento-08.png"/>
-                <Image Source="Reglamento-09.png"/>
-                <Image Source="Reglamento-10.png"/>
-                <Image Source="Reglamento-11.png"/>
-                <Image Source="Reglamento-12.png"/>
-                <Image Source="Reglamento-13.png"/>
-                <Image Source="Reglamento-14.png"/>
-                <Image Source="Reglamento-15.png"/>
-                <Image Source="Reglamento-16.png"/>
-                <Image Source="Reglamento-17.png"/>
-                <Image Source="Reglamento-18.png"/>
-                <Image Source="Reglamento-19.png"/>
-                <Image Source="Reglamento-20.png"/>
-                <Image Source="Reglamento-21.png"/>
-                <Image Source="Reglamento-22.png"/>
-                <Image Source="Reglamento-23.png"/>
-                <Image Source="Reglamento-24.png"/>
-                <Image Source="Reglamento-25.png"/>
-                <Image Source="Reglamento-26.png"/>
-                <Image Source="Reglamento-27.png"/>
-                <Image Source="Reglamento-28.png"/>
-                <Image Source="Reglamento-29.png"/>
-
+                <Image Source="Reglamento01.png"/>
+                <Image Source="Reglamento02.png"/>
+                <Image Source="Reglamento03.png"/>
+                <Image Source="Reglamento04.png"/>
+                <Image Source="Reglamento05.png"/>
+                <Image Source="Reglamento06.png"/>
+                <Image Source="Reglamento07.png"/>
+                <Image Source="Reglamento08.png"/>
+                <Image Source="Reglamento09.png"/>
+                <Image Source="Reglamento10.png"/>
+                <Image Source="Reglamento11.png"/>
+                <Image Source="Reglamento12.png"/>
+                <Image Source="Reglamento13.png"/>
+                <Image Source="Reglamento14.png"/>
+                <Image Source="Reglamento15.png"/>
+                <Image Source="Reglamento16.png"/>
+                <Image Source="Reglamento17.png"/>
+                <Image Source="Reglamento18.png"/>
+                <Image Source="Reglamento19.png"/>
+                <Image Source="Reglamento20.png"/>
+                <Image Source="Reglamento21.png"/>
+                <Image Source="Reglamento22.png"/>
+                <Image Source="Reglamento23.png"/>
+                <Image Source="Reglamento24.png"/>
+                <Image Source="Reglamento25.png"/>
+                <Image Source="Reglamento26.png"/>
+                <Image Source="Reglamento27.png"/>
+                <Image Source="Reglamento28.png"/>
+                <Image Source="Reglamento29.png"/>   
+            
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
