@@ -40,6 +40,8 @@ namespace PrototipoPAv2
                     if (txtEmail.Text.Equals("Admin") && txtContraseña.Text.Equals("123"))
                     {
                         //Application.Current.Properties["privilegio"] = "Administrador@";
+                        txtEmail.Text = string.Empty;
+                        txtContraseña.Text = string.Empty;
                         await Navigation.PushAsync(new menuAdmin());
                     }
                     else
@@ -52,12 +54,17 @@ namespace PrototipoPAv2
 
                             if (userSesion.Tipo.Equals("Empaque"))
                             {
+
                                 await this.DisplayAlert("Bienvenido", userSesion.Tipo+": "+userSesion.Nombre+" "+userSesion.Apellido, "Acceder");
                                 Application.Current.Properties["sesion"] = userSesion;
+
+                                txtEmail.Text = string.Empty;
+                                txtContraseña.Text = string.Empty;
                                 await Navigation.PushAsync(new menuEmpaque());
                             }
                             else
                             {
+                                
                                 await this.DisplayAlert("Bienvenido", userSesion.Tipo + ": " + userSesion.Nombre + " " + userSesion.Apellido, "Acceder");
                                 Application.Current.Properties["sesion"] = userSesion;
                             }                         

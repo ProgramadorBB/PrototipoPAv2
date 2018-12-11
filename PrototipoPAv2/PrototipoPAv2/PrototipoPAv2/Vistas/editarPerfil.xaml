@@ -5,6 +5,7 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical"
                      Padding="20"
+                     BackgroundColor="LightGoldenrodYellow"
                      Spacing="5">
             <Label Text="Editar Perfil"
                    HorizontalTextAlignment="Center"
@@ -52,17 +53,37 @@
                 <Button x:Name="btnMostrarOcultar"
                         Text="Mostrar"
                         FontSize="Micro"
-                        WidthRequest="71"
-                        HeightRequest="35"
+                        FontAttributes="Bold"
+                        BorderRadius="10"
+                        BorderWidth="2"
+                        BorderColor="#353535"
+                        BackgroundColor="#545454"
+                        TextColor="LightGoldenrodYellow"
+                        WidthRequest="72"
+                        HeightRequest="34"
                         Clicked="BtnMostrarOcultar_Clicked"/>
             </StackLayout>            
 
             <Button x:Name="btnCargarDatos"
                     Text="Cargar Datos"
+                    FontAttributes="Bold"
+                        BorderRadius="10"
+                        BorderWidth="2"
+                        BorderColor="#353535"
+                        BackgroundColor="#545454"
+                    HeightRequest="38"
+                        TextColor="LightGoldenrodYellow"
                     Clicked="BtnCargarDatos_Clicked"/>
 
             <Button x:Name="btnActualizarPerfil"
                     Text="Actualizar Perfil"
+                    FontAttributes="Bold"
+                        BorderRadius="10"
+                        BorderWidth="2"
+                        BorderColor="#353535"
+                    HeightRequest="38"
+                        BackgroundColor="#545454"
+                        TextColor="LightGoldenrodYellow"
                     Clicked="BtnActualizarPerfil_Clicked"/>
 
         </StackLayout>
