@@ -23,9 +23,9 @@ namespace PrototipoPAv2.Vistas
             await Navigation.PushAsync(new editarPerfil());
         }
 
-        private void BtnCalendario_Clicked(object sender, EventArgs e)
+        private async void BtnCalendario_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new verCalendarioColor());
         }
 
         private void BtnReglamento_Clicked(object sender, EventArgs e)

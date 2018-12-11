@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrototipoPAv2.Vistas.verCalendarioColor">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical"
+                         Padding="20"
+                         Spacing="5"
+                         BackgroundColor="White">
+                
+                <Label Text="Calendario Color 2019"
+                       HorizontalTextAlignment="Center"
+                FontSize="Large"/>
+
+                <Image Source="enero.png"/>
+                <Image Source="febrero.png"/>
+                <Image Source="marzo.png"/>
+                <Image Source="abril.png"/>
+                <Image Source="mayo.png"/>
+                <Image Source="junio.png"/>
+                <Image Source="julio.png"/>
+                <Image Source="agosto.png"/>
+                <Image Source="septiembre.png"/>
+                <Image Source="octubre.png"/>
+                <Image Source="noviembre.png"/>
+                <Image Source="diciembre.png"/>
+
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>
