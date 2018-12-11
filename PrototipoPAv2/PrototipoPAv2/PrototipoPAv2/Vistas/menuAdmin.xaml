@@ -17,6 +17,7 @@
                     Opacity="0.8"
                     BackgroundColor="#545454"
                     TextColor="LightGoldenrodYellow"
+                    HorizontalOptions="FillAndExpand"
                     HorizontalTextAlignment="Center"/>
 
                 <StackLayout Orientation="Horizontal"

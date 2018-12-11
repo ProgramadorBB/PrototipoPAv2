@@ -15,6 +15,27 @@ namespace PrototipoPAv2.Vistas
 		public menuEmpaque ()
 		{
 			InitializeComponent ();
-		}
-	}
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
+
+        private async void BtnPerfil_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new editarPerfil());
+        }
+
+        private void BtnCalendario_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnReglamento_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void BtnCerrarSession_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync();
+        }
+    }
 }

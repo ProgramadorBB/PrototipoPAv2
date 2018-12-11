@@ -21,6 +21,10 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Modelo\Usuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vistas\editarPerfil.xaml.cs">
+      <DependentUpon>editarPerfil.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Vistas\EditUserPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Vistas\menuAdmin.xaml.cs">
       <DependentUpon>menuAdmin.xaml</DependentUpon>
@@ -49,6 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Vistas\menuEmpaque.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Vistas\editarPerfil.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

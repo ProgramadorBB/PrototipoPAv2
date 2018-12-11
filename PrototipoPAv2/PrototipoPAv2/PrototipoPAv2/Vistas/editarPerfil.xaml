@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrototipoPAv2.Vistas.editarPerfil">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                     Padding="20"
+                     Spacing="5">
+            <Label Text="Editar Perfil"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Large"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Email:"
+                       VerticalTextAlignment="Center"
+                       FontSize="Micro"/>
+                <Entry x:Name="txtEmail"
+                       Placeholder="add email"
+                       FontSize="Micro"
+                       HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Contraseña:"
+                       VerticalTextAlignment="Center"
+                       FontSize="Micro"/>
+                <Entry x:Name="txtContraseña"
+                       Placeholder="add contraseña"
+                       IsPassword="True"
+                       FontSize="Micro"
+                       HorizontalOptions="FillAndExpand"/>
+                <Button x:Name="btnMostrarOcultar"
+                        Text="Mostrar"
+                        FontSize="Micro"
+                        WidthRequest="71"
+                        HeightRequest="35"
+                        Clicked="BtnMostrarOcultar_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Nombre:"
+                       VerticalTextAlignment="Center"
+                       FontSize="Micro"/>
+                <Entry x:Name="txtNombre"
+                       Placeholder="add nombre"
+                       FontSize="Micro"
+                       HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Apellido:"
+                       VerticalTextAlignment="Center"
+                       FontSize="Micro"/>
+                <Entry x:Name="txtApellido"
+                       Placeholder="add apellido"
+                       FontSize="Micro"
+                       HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <Button x:Name="btnCargarDatos"
+                    Text="Cargar Datos"
+                    Clicked="BtnCargarDatos_Clicked"/>
+
+            <Button x:Name="btnActualizarPerfil"
+                    Text="Actualizar Perfil"
+                    Clicked="BtnActualizarPerfil_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

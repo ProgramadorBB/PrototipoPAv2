@@ -4,24 +4,62 @@
              x:Class="PrototipoPAv2.Vistas.menuEmpaque">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical"
-                     BackgroundColor="LightSeaGreen"
+                     BackgroundColor="LightGoldenrodYellow"
                      Padding="20"
                      Spacing="5">
+            
             <Label Text="Menú Empaque"
-                   TextColor="LightSeaGreen"
                    FontSize="Large"
-                   FontAttributes="Bold"
-                   BackgroundColor="Black"
-                   Opacity="0.6"
-                   HorizontalOptions="CenterAndExpand" />
+                   Opacity="0.8"
+                    BackgroundColor="#545454"
+                    TextColor="LightGoldenrodYellow"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="FillAndExpand" />
+
+            <Button x:Name="btnPerfil"
+                    Text="Editar Perfil"
+                    FontAttributes="Bold"
+                        BorderRadius="10"
+                        BorderWidth="2"
+                        BorderColor="#353535"
+                        BackgroundColor="#545454"
+                        TextColor="LightGoldenrodYellow"
+                    HeightRequest="37"
+                    Clicked="BtnPerfil_Clicked"/>
 
             <Button x:Name="btnCalendario"
                     Text="Ver calendario colores"
-                    />
+                    FontAttributes="Bold"
+                        BorderRadius="10"
+                        BorderWidth="2"
+                        BorderColor="#353535"
+                        BackgroundColor="#545454"
+                        TextColor="LightGoldenrodYellow"
+                    HeightRequest="37"
+                    Clicked="BtnCalendario_Clicked"/>
             
             <Button x:Name="btnReglamento"
-                    Text="Ver Reglamento"/>
-            
+                    Text="Ver Reglamento"
+                    FontAttributes="Bold"
+                        BorderRadius="10"
+                        BorderWidth="2"
+                        BorderColor="#353535"
+                        BackgroundColor="#545454"
+                        TextColor="LightGoldenrodYellow"
+                    HeightRequest="37"
+                    Clicked="BtnReglamento_Clicked"/>
+
+            <Button x:Name="btnCerrarSession"
+                    Text="Cerrar Sesión"
+                    FontAttributes="Bold"
+                        BorderRadius="10"
+                        BorderWidth="2"
+                        BorderColor="#353535"
+                        BackgroundColor="#545454"
+                        TextColor="LightGoldenrodYellow"                    
+                        HeightRequest="37"
+                    Clicked="BtnCerrarSession_Clicked"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
