@@ -67,6 +67,10 @@ namespace PrototipoPAv2
                                 
                                 await this.DisplayAlert("Bienvenido", userSesion.Tipo + ": " + userSesion.Nombre + " " + userSesion.Apellido, "Acceder");
                                 Application.Current.Properties["sesion"] = userSesion;
+
+                                txtEmail.Text = string.Empty;
+                                txtContraseña.Text = string.Empty;
+                                await Navigation.PushAsync(new menuCordina());
                             }                         
                            
                         }
