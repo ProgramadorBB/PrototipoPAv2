@@ -162,6 +162,42 @@
   <ItemGroup>
     <BundleResource Include="Resources\newUser.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\enero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\febrero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\marzo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\abril.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mayo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\junio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\julio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\agosto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\septiembre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\octubre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\noviembre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\diciembre.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\PrototipoPAv2\PrototipoPAv2.projitems" Label="Shared" />
 </Project>
