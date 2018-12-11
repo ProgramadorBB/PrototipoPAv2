@@ -15,6 +15,7 @@ namespace PrototipoPAv2.Vistas
 		public verReglamento ()
 		{
 			InitializeComponent ();
-		}
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
 	}
 }

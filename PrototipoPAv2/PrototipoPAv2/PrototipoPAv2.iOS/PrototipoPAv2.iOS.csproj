@@ -198,6 +198,93 @@
   <ItemGroup>
     <BundleResource Include="Resources\diciembre.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reglamento-29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\PrototipoPAv2\PrototipoPAv2.projitems" Label="Shared" />
 </Project>

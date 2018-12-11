@@ -28,9 +28,9 @@ namespace PrototipoPAv2.Vistas
             await Navigation.PushAsync(new verCalendarioColor());
         }
 
-        private void BtnReglamento_Clicked(object sender, EventArgs e)
+        private async void BtnReglamento_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new verReglamento());
         }
 
         private async void BtnCerrarSession_Clicked(object sender, EventArgs e)

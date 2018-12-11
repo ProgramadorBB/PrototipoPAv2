@@ -3,10 +3,45 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PrototipoPAv2.Vistas.verReglamento">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
+        <ScrollView>
+            <StackLayout Orientation="Vertical"
+                     Padding="10"
+                     Spacing="1"
+                     BackgroundColor="LightGoldenrodYellow">
+                <Label Text="Reglamento Oficial"
+                FontSize="Large"
                 HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+                <Image Source="Reglamento-01.png"/>
+                <Image Source="Reglamento-02.png"/>
+                <Image Source="Reglamento-03.png"/>
+                <Image Source="Reglamento-04.png"/>
+                <Image Source="Reglamento-05.png"/>
+                <Image Source="Reglamento-06.png"/>
+                <Image Source="Reglamento-07.png"/>
+                <Image Source="Reglamento-08.png"/>
+                <Image Source="Reglamento-09.png"/>
+                <Image Source="Reglamento-10.png"/>
+                <Image Source="Reglamento-11.png"/>
+                <Image Source="Reglamento-12.png"/>
+                <Image Source="Reglamento-13.png"/>
+                <Image Source="Reglamento-14.png"/>
+                <Image Source="Reglamento-15.png"/>
+                <Image Source="Reglamento-16.png"/>
+                <Image Source="Reglamento-17.png"/>
+                <Image Source="Reglamento-18.png"/>
+                <Image Source="Reglamento-19.png"/>
+                <Image Source="Reglamento-20.png"/>
+                <Image Source="Reglamento-21.png"/>
+                <Image Source="Reglamento-22.png"/>
+                <Image Source="Reglamento-23.png"/>
+                <Image Source="Reglamento-24.png"/>
+                <Image Source="Reglamento-25.png"/>
+                <Image Source="Reglamento-26.png"/>
+                <Image Source="Reglamento-27.png"/>
+                <Image Source="Reglamento-28.png"/>
+                <Image Source="Reglamento-29.png"/>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
